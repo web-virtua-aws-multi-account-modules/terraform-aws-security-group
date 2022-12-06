@@ -39,7 +39,7 @@ variable "default_cidr_blocks" {
 }
 
 variable "allow_rules_list" {
-  description = "List with security groups configuration"
+  description = "List with security groups rules configuration"
   type = list(object({
     protocol         = string
     ports            = list(any)
